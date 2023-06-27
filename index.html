@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible"  content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
-    <title>Register here!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration details</title>
+    <script src="https://www.gstat  sic.com/firebasejs/9.23.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
     
     <body>
         <div>
             <h1>KINDLY SUBMIT YOUR DEVICE DETAILS HERE</h1>
+
             <p>SERVICE IS CURRENTLY AVAILABLE FOR ALL USERS IN THE COUNTRY/CONTINENT ROUND THE CLOCK</p>
             <b></b>
         </div>
     
         <div>
             <h2>Owner Personal Details</h2>
-            <form action>
-                <label for="Full_Name">Full Name:</label>
-                <input type="text" id="Full_Name" name="Full_Name" required><br><br>
-                <label for="ID_Passport_Number">ID/Passport Number:</label>
-                <input type="varchar" id="ID_Passport_Number" name="ID_Passport_Number" required><br><br>
-                <label for="Location">County:</label>
-                <input type="text" id="Location" name="County" required><br><br>
-                <label for="Email_address">Email Address:</label>
-                <input type="email" id="email" name="email" value="" oninput="setEmail(event.target.value)" /><br><br>
-    
-                <button type="submit">Submit Details</button>
-            </form>
         </div>
+
+            
+        <div class="left-div">
+            <form class="registration details form" onsubmit = "storedata(event)" id = "register details">
+
+                <div class = "fullName-div" id="fullNamediv">
+                    <label for="fullName" class="label" id="fullNamelabel">fullName</label>
+                    <input type="text" name="fullName" id="fullName" class="input-field" placeholder = "Enter fullName" required><br><br>
+                </div>
+
+                <div class = "IDPassportNumber-div" id="IDPassportNumberdiv">
+                    <label for="IDPassportNumber" class="label" id="IDPassportNumberlabel">IDPassportNumber</label>
+                    <input type="number" name="IDPassportNumber" id="IDPassportNumber" class="input-field" placeholder = "Enter IDPassportNumber" required><br><br>
+                </div>
+
+                <div class = "Location-div" id="Locationdiv">`
+                    <label for="Location" class="label" id="Locationlabel">Location</label>
+                    <input type="text" name="Location" id="Location" class="input-field" placeholder = "Enter Location" required><br><br>
+                </div>
+
+                <div class = "Email" id="Email">
+                    <label for="Email" class="label" id="Emaillabel">Email</label>
+                    <input type="text" name="Email" id="Email" class="input-field" placeholder = "Enter Email" required><br><br>
+                </div>
+                <div>
+                    <button type="submit">Submit Details</button>
+                </div>
+
+                </form>
+
+
     
         <div>
             <h2>Device Information</h2>
             <form action>
-                <label for="Device_Model">Device Model:</label>
-                <input type="varchar" id="Device_Model" name="Device_Model"><br><br>
-                <label for="Device_Brand">Device Brand:</label>
-                <input type="text" id="Device_Brand" name="Device_Brand" required><br><br>
                 <label for="IMEI">IMEI:</label>
                 <input type="number" id="IMEI" name="IMEI" required><br><br>
+                <label for="Device_Model">Device Model:</label>
+                <input type="varchar" id="DeviceModel" name="DeviceModel"><br><br>
+                <label for="Device_Brand">Device Brand:</label>
+                <input type="text" id="DeviceBrand" name="DeviceBrand" required><br><br>
+               
     
                 <button type="submit">Submit Details</button>
             </form>
