@@ -25,7 +25,7 @@
 
             
         <div class="left-div">
-            <form class="registration details form" onsubmit = "storedata(event)" id = "register details">
+            <form class="registration form" onsubmit = "registerdetails(event)" id = "registerdetails">
 
                 <div class = "fullName-div" id="fullNamediv">
                     <label for="fullName" class="label" id="fullNamelabel">fullName</label>
@@ -46,8 +46,8 @@
                     <label for="Email" class="label" id="Emaillabel">Email</label>
                     <input type="text" name="Email" id="Email" class="input-field" placeholder = "Enter Email" required><br><br>
                 </div>
-                <div>
-                    <button type="submit">Submit Details</button>
+                <div id = "form-btns">
+                    <button type="submit" class="botton add" id =Submit><i class ="fas fa -plus"></i>SUBMIT</button>
                 </div>
 
                 </form>
