@@ -43,10 +43,10 @@ const firebaseConfig = {
     IMEI:IMEI,
     DeviceModel:DeviceModel,
     DeviceBrand: DeviceBrand,
-    status: "pending",
+    
   });
 
-
+  
   //document.getElementById("registration form-header").insertAdjacentHTML(
     //"afterend",
    

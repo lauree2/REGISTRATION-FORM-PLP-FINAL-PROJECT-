@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration details</title>
-    <script src="https://www.gstat  sic.com/firebasejs/9.23.0/firebase-app.js";></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
     <script src="https://kit.fontawesome.com/d733855d1a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -24,7 +24,7 @@
         </div>
 
             
-        <div class="left-div">
+        <div class="top-div">
             <form class="registration form" onsubmit = "registerdetails(event)" id = "registerdetails">
 
                 <div class = "fullName-div" id="fullNamediv">
@@ -37,7 +37,7 @@
                     <input type="number" name="IDPassportNumber" id="IDPassportNumber" class="input-field" placeholder = "Enter IDPassportNumber" required><br><br>
                 </div>
 
-                <div class = "Location-div" id="Locationdiv">`
+                <div class = "Location-div" id="Locationdiv">
                     <label for="Location" class="label" id="Locationlabel">Location</label>
                     <input type="text" name="Location" id="Location" class="input-field" placeholder = "Enter Location" required><br><br>
                 </div>
@@ -56,16 +56,30 @@
     
         <div>
             <h2>Device Information</h2>
-            <form action>
-                <label for="IMEI">IMEI:</label>
-                <input type="number" id="IMEI" name="IMEI" required><br><br>
-                <label for="Device_Model">Device Model:</label>
-                <input type="varchar" id="DeviceModel" name="DeviceModel"><br><br>
-                <label for="Device_Brand">Device Brand:</label>
-                <input type="text" id="DeviceBrand" name="DeviceBrand" required><br><br>
-               
-    
-                <button type="submit">Submit Details</button>
+
+        </div>
+        <form class="registration form" onsubmit = "registerdetails(event)" id = "registerdetails">
+            
+            <div class = "IMEI-div" id="IMEIdiv">
+                <label for="IMEI" class="label" id="IMEIlabel">IMEI</label>
+                <input type="text" name="IMEI" id="IMEI" class="input-field" placeholder = "Enter IMEI" required><br><br>
+            </div>
+
+            <div class = "DeviceModel-div" id="DeviceModel">
+                <label for="DeviceModel" class="label" id="DeviceModellabel">DeviceModel</label>
+                <input type="text" name="DeviceModel" id="DeviceModel" class="input-field" placeholder = "Enter DeviceModel" required><br><br>
+            </div>
+
+
+            <div class = "DeviceBrand-div" id="DeviceBranddiv">
+                <label for="DeviceBrand" class="label" id="DeviceBrandlabel">DeviceBrand</label>
+                <input type="text" name="DeviceBrand" id="DeviceBrand" class="input-field" placeholder = "Enter DeviceBrand" required><br><br>
+            </div>
+                
+            <div id = "form-btns">
+            <button type="submit" class="botton add" id =Submit><i class ="fas fa -plus"></i>SUBMIT</button>
+            </div>
+                
             </form>
         </div>
     
