@@ -22,28 +22,21 @@ const firebaseConfig = {
     var fullName= document.getElementById("fullName").value;
     var IDPassportNumber = document.getElementById("IDPassportNumber").value;
     var Location= document.getElementById("Location").value;
-    var email= document.getElementById("email").value;
-    var IMEI= document.getElementById("IMEI").value;
-    var DeviceModel= document.getElementById("DeviceModel").value;
-    var DeviceBrand= document.getElementById("DeviceBrand").value;
+    var Email= document.getElementById("Email").value;
+    
     document.getElementById("fullName").value = "";
     document.getElementById("IDPassportNumber").value = "";
     document.getElementById("Location").value = "";
     document.getElementById("Email").value = "";
-    document.getElementById("IMEI").value = "";
-    document.getElementById("DeviceModel").value = "";
-    document.getElementById("DeviceBrand").value = "";
+   
 
     //  store data to firebase
-  firebase.database().ref("Registrationform/"+ code).set({
+  firebase.database().ref("Registrationform/" + code).set({
     fullName: fullName,
     IDPassportNumber: IDPassportNumber,
     Location: Location,
-    Email: Email,
-    IMEI:IMEI,
-    DeviceModel:DeviceModel,
-    DeviceBrand: DeviceBrand,
-    
+    Email:Email,
+  
   });
 
   
