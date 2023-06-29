@@ -16,7 +16,7 @@ const firebaseConfig = {
   var code;
  
   
-  function registerdetails(event) {
+  function enterdetails(event) {
     event.preventDefault()
   
     var fullName= document.getElementById("fullName").value;
