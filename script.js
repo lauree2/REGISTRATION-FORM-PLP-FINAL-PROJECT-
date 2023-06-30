@@ -22,7 +22,6 @@ const firebaseConfig = {
     var IDPassportNumber = document.getElementById("IDPassportNumber").value;
     var Location= document.getElementById("Location").value;
     var Email= document.getElementById("Email").value;
-    
     document.getElementById("fullName").value = "";
     document.getElementById("IDPassportNumber").value = "";
     document.getElementById("Location").value = "";
