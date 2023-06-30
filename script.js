@@ -29,13 +29,16 @@ const firebaseConfig = {
    
 
     //  store data to firebase
-  firebase.database().ref("Registrationform/ + code").set({
-    fullName: fullName,
-    IDPassportNumber: IDPassportNumber,
-    Location: Location,
-    Email:Email,
+  firebase
+    .database()
+    .ref("Registrationform/ + code")
+    .set({
+      fullName: fullName,
+      IDPassportNumber: IDPassportNumber,
+      Location: Location,
+      Email:Email,
   
-  });
+    })
 
   
   //document.getElementById("registration form-header").insertAdjacentHTML(
