@@ -1,13 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCyX5s_SRUN6X-Fb7els1csIC3mHo-d8Bs",
-    authDomain: "final-project-test-d4c16.firebaseapp.com",
-    databaseURL: "https://final-project-test-d4c16-default-rtdb.firebaseio.com",
-    projectId: "final-project-test-d4c16",
-    storageBucket: "final-project-test-d4c16.appspot.com",
-    messagingSenderId: "304468731184",
-    appId: "1:304468731184:web:52c6517078e66e09e994f5",
-    measurementId: "G-CHDQFPEVSM"
-  };
+  apiKey: "AIzaSyAvL_RpXngQ-OK8Gz8ZDBWYkfew8pXM-54",
+  authDomain: "keir-care-ee286.firebaseapp.com",
+  projectId: "keir-care-ee286",
+  storageBucket: "keir-care-ee286.appspot.com",
+  messagingSenderId: "852048266705",
+  appId: "1:852048266705:web:e2b659d5f2fda40eb78cf0",
+  measurementId: "G-5BXDM0CFTV"
+};
 
   firebase.initializeApp(firebaseConfig);
 
